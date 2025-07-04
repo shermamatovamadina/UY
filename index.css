@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  margin: auto;
+}
+.container {
+  width: 100%;
+  max-width: 1800px;
+  height: 500px;
+  margin: auto;
+  padding: 30px;
+}
+/* .card{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
+} */
+ .card{
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  
+ }
+
+.name{
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+} 
+
+
+
+
+.lavozim{
+  width: 400px;
+  height: 50px;
+  border: none;
+  background-color:#1E90FF ;
+  text-align: center;
+  font-size: 20px;
+color: white;
+
+}
+.lavozim:hover{
+  background-color: blue;
+}
+.btn{
+  width: 100px;
+  height: 50px;
+  background-color: #2E8B57;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn:hover{
+  background-color: green;
+
+}
+.manzil{
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: #708090;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.manzil:hover{
+    background-color:#696969;
+
+}
+.table{
+  width:100%;
+  max-width: 1480px;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  padding: 5px;
+  justify-content: space-between;
+  color: #696969;
+ 
+
+}
+.tablet{
+  width:100%;
+  max-width: 1480px;
+  padding: 5px;
+  border-bottom: 1px solid rgba(60, 64, 67, 0.3);
+  
+
+}
