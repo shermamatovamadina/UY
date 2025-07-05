@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-<script src="./index.js" defer></script></head>
-<body> 
-  
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+</head>
+<body>
+
 <div class="container">
   <div class="card">
-    <form  class="" action="">
-      <input class="name" type="text" id="input" placeholder="F.I.Sh" /> 
-      <select class="lavozim" name="lavozim" id="lavozim">
+    <form>
+      <input class="name" type="text" id="searchInput" placeholder="F.I.Sh" />
+      <select class="lavozim" id="filterLavozim">
         <option value="">Lavozim turini tanlang</option>
         <option value="Junior">Junior</option>
         <option value="Middle">Middle</option>
         <option value="Senior">Senior</option>
       </select>
-
-      <select class="manzil" name="Manzil" id="manzil">
+      <select class="manzil" id="filterManzil">
         <option value="">Manzilni tanlang</option>
         <option value="Buxoro">Buxoro</option>
         <option value="Toshkent">Toshkent</option>
@@ -29,12 +28,12 @@
       </select>
     </form>
     <button class="btn" id="openForm">Qo'shish</button>
-    
   </div>
-  <div class="tablet ">
-    <table class="table " >
-      <thead class="table ">
-        <tr class="table">
+
+  <div class="tablet">
+    <table class="table">
+      <thead>
+        <tr>
           <th>No</th>
           <th>Ism</th>
           <th>Familiya</th>
@@ -50,7 +49,42 @@
       <tbody id="tableBody"></tbody>
     </table>
   </div>
-  
 </div>
+
+
+<div id="formContainer" class="form-container" style="display: none;">
+  <h3>O'quvchining ma'lumotlari</h3>
+  <form id="studentForm">
+    <input type="text" id="firstName" placeholder="Ism" required />
+    <input type="text" id="lastName" placeholder="Familiya" required />
+    <select id="modalManzil" required>
+      <option value="">Manzilni tanlang</option>
+      <option value="Buxoro">Buxoro</option>
+      <option value="Toshkent">Toshkent</option>
+      <option value="Samarqand">Samarqand</option>
+      <option value="Farg'ona">Farg'ona</option>
+    </select>
+    <input type="date" id="birthDate" required />
+    <select id="modalLavozim" required>
+      <option value="">Lavozim</option>
+      <option value="React">React</option>
+      <option value="Nodejs">Nodejs</option>
+      <option value="Angular">Angular</option>
+    </select>
+    <select id="lavozimTuri" required>
+      <option value="">Lavozim turi</option>
+      <option value="junior">junior</option>
+      <option value="middle">middle</option>
+      <option value="senior">senior</option>
+    </select>
+    <input type="number" id="salary" placeholder="Maoshi" required />
+    <label><input type="checkbox" id="married" /> Uylanganmi?</label>
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+      <button type="button" onclick="closeForm()">Yopish</button>
+      <button type="submit">Qo'shish</button>
+    </div>
+  </form>
+</div>
+
 </body>
 </html>
